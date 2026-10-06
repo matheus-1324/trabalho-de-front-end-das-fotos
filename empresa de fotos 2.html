@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos Caprichadas</title>
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=zFZKjgW3hPzLZBIrFmIFDJkEGLTm2Y8Qs0UJbz61CdfNIaETtAy9ADj3Bs-QdOhqD5Asv_e2IMSLQV00RCVpIOjc6LfzyPf66fSk5-4v6-nbESkH8DMqX3EH0dzYHoCuW9LbczWSb-drtSFM5tFMdPheL1eM2nfbCl-Slc0lS88nSwy9WM7lSiFE8ZVtE_iCCNty7E_KDtPDnURx_2w2Km8OTf8T7PaCoBvheCpeHj7-HNdz9VQzOsENo-O3qgVXJqRPMg0-9T_JBITo8kY8XhZ7TxvOdH6h4_KBhogkKoc" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9zZW5hY3Blcm5hbWJ1Y28uc2hhcmVwb2ludC5jb20vc2l0ZXMvVEFEUzI2LjExMzFNVU5JREFERURFRVhURU5TT0ZST05URU5ELTIwMjYuMi9fbGF5b3V0cy8xNS9kb3dubG9hZC5hc3B4P1VuaXF1ZUlkPWU0NmQ4ODYxLTk5MmUtNGI0YS04OGM3LTQzZjczZmNkNDk0YyZUcmFuc2xhdGU9ZmFsc2UmQXBpVmVyc2lvbj0yLjA"/><style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        
+        header {
+            background-color: #2ecc71;
+            color: #ffffff;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        header nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 13px;
+        }
+
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), 
+                        url('camera.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .hero p {
+            max-width: 850px;
+            margin: 0 auto 25px auto;
+            font-size: 11px;
+            line-height: 1.5;
+            color: #d1d1d1;
+        }
+
+        .btn-ver-mais {
+            background-color: #2ecc71;
+            color: #ffffff;
+            padding: 8px 20px;
+            text-decoration: none;
+            font-size: 12px;
+            border-radius: 2px;
+            display: inline-block;
+        }
+
+        
+        .sobre {
+            background-color: #2ecc71;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 20px 25px 20px; 
+        }
+
+        .sobre h2 {
+            font-size: 18px;
+            margin-bottom: 12px;
+            font-weight: bold;
+        }
+
+        .sobre p {
+            max-width: 850px;
+            margin: 0 auto 15px auto;
+            font-size: 11px;
+            line-height: 1.4;
+            color: #e0e0e0;
+        }
+
+        .btn-contratar {
+            background-color: #ffffff;
+            color: #12154d;
+            padding: 6px 18px;
+            text-decoration: none;
+            font-size: 11px;
+            font-weight: bold;
+            border-radius: 2px;
+            display: inline-block;
+        }
+
+        
+        .servicos {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #ffffff;
+        }
+
+        .servicos h2 {
+            font-size: 20px;
+            margin-bottom: 30px;
+            color: #000000;
+        }
+
+        .servicos-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+        }
+
+        .servico-item {
+            flex: 1;
+            min-width: 200px;
+            max-width: 220px;
+        }
+
+        .servico-item img {
+            width: 45px;
+            height: 45px;
+            margin-bottom: 12px;
+            object-fit: contain;
+        }
+
+        .servico-item h3 {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+
+        .servico-item p {
+            font-size: 11px;
+            color: #555555;
+            line-height: 1.4;
+        }
+
+        
+        .fotos {
+            padding: 20px 20px 40px 20px;
+            text-align: center;
+        }
+
+        .fotos h2 {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        .fotos-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 900px;
+            margin: 0 auto;
+            gap: 0;
+        }
+
+        .fotos-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+
+        
+        footer {
+            background-color: #ffffff;
+            padding: 40px 20px 20px 20px;
+            border-top: 1px solid #eaeaea;
+        }
+
+        .footer-container {
+            max-width: 850px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .contato-info p {
+            margin-bottom: 8px;
+            font-size: 11px;
+            color: #333;
+        }
+
+        .sobre-companhia {
+            max-width: 350px;
+        }
+
+        .sobre-companhia h4 {
+            font-size: 13px;
+            margin-bottom: 10px;
+            color: #000000;
+        }
+
+        .sobre-companhia p {
+            font-size: 11px;
+            color: #555;
+            line-height: 1.4;
+            margin-bottom: 10px;
+        }
+
+        .creditos {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 10px;
+            color: #888;
+        }
+
+        .voltar-topo {
+            display: block;
+            text-align: center;
+            margin-top: 5px;
+            color: #333;
+            text-decoration: none;
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <header>
+        <div class="logo">Fotos Caprichadas</div>
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#fotos">Fotos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    
+    <div class="hero">
+        <h1>Fotos Profissionais</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="#" class="btn-ver-mais">Ver mais</a>
+    </div>
+
+    
+    <div id="sobre" class="sobre">
+        <h2>Sobre</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <a href="#" class="btn-contratar">Contratar Agora</a>
+    </div>
+
+    
+    <div id="servicos" class="servicos">
+        <h2>Serviços</h2>
+        <div class="servicos-grid">
+            <div class="servico-item">
+                <img src="p1.png" alt="Fotografia">
+                <h3>Fotografia</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            </div>
+            <div class="servico-item">
+                <img src="p2.png" alt="Edição de Filmes">
+                <h3>Edição de Filmes</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            </div>
+            <div class="servico-item">
+                <img src="p3.png" alt="Captação de Imagens">
+                <h3>Captação de Imagens</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            </div>
+            <div class="servico-item">
+                <img src="p4.png" alt="Tratamento de Imagens">
+                <h3>Tratamento de Imagens</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="fotos" class="fotos">
+        <h2>Fotos</h2>
+        <div class="fotos-grid">
+            <img src="ceu.jpg" alt="Foto 1">
+            <img src="grama.jpg" alt="Foto 2">
+            <img src="montanha.jpg" alt="Foto 3">
+            <img src="mar.jpg" alt="Foto 4">
+            <img src="arvores.jpg" alt="Foto 5">
+            <img src="ponte.jpg"  alt="Foto 6">
+        </div>
+    </div>
+
+    
+    <footer id="contato">
+        <div class="footer-container">
+            <div class="contato-info">
+                <p> <img src="tel.png"  > Rua Suassuna 234 Recife - PE</p>
+                <p> <img src="tel.png">   (81) 981004445</p>
+                <p> <img src="mail.png"> (criandosite@gmail.com)</p>
+            </div>
+            <div class="sobre-companhia">
+                <h4>Sobre a companhia</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+            </div>
+        </div>
+        <div class="creditos">
+            Desenvolvido por
+        </div>
+        <a href="#" class="voltar-topo">Voltar para o topo</a>
+    </footer>
+
+</body>
+</html>
